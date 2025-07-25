@@ -39,20 +39,62 @@ This was created to showcase my SQL and analytical skills for a Senior Data Anal
 - Peak usage ZIP codes
 - Comparative analysis: usage vs. revenue
 
----
+📈 Visualization Strategy (Power BI/Tableau)
 
-## 📊 How I’d Use Power BI / Tableau
-Although I didn’t use BI tools here due to dummy data limitations, here’s what I would do with real data:
-- Connect Power BI or Tableau to the PostgreSQL database or use the exported CSVs
-- Build visual dashboards:
-  - Heatmap of usage by ZIP code
-  - Bar charts for revenue trends
-  - Line chart comparing usage vs revenue over time
-- Create filters for ZIP, city, month, etc.
-- Share via Tableau Public or Power BI Service
+Although this project was built using dummy utility data, it is fully designed to support real-time dashboards in Power BI or Tableau through direct SQL connections or .csv imports. Below is how I would structure the visual reporting layer:
 
----
+⸻
 
+🔌 Connection Setup
+	•	Power BI Desktop:
+	•	Connect via Get Data > PostgreSQL Database
+	•	Use SQL queries directly or import tables (consumption, revenue, zip_data)
+	•	Enable auto-refresh if hosted via cloud or SQL Server
+	•	Tableau Public/Desktop:
+	•	Connect using PostgreSQL Connector
+	•	Import tables or use custom SQL
+	•	Join visually or use pre-exported .csv results
+
+⸻
+
+📊 Dashboard 1: Energy Usage Overview
+	•	KPI Tiles:
+	•	Total kWh Consumed
+	•	Average Monthly Usage
+	•	Peak ZIP Code Usage
+	•	Bar Chart:
+	•	Top 10 ZIP Codes by Energy Usage
+	•	Map Visualization:
+	•	Usage heatmap by ZIP code (Texas overlay)
+
+⸻
+
+💰 Dashboard 2: Billing & Revenue
+	•	KPI Tiles:
+	•	Total Revenue Collected
+	•	Average Revenue per ZIP
+	•	Clustered Bar Chart:
+	•	Top ZIP Codes by Revenue
+	•	Line Chart:
+	•	Usage vs Revenue trend by month
+
+⸻
+
+🧠 Dashboard 3: Executive Insights for CenterPoint Energy
+	•	Scatter Plot:
+	•	Usage vs Billed Amount per ZIP (highlighting outliers)
+	•	Heat Map:
+	•	Usage intensity by county
+	•	Filters:
+	•	State, ZIP Code, Billing Month
+
+⸻
+
+⚙️ Additional Visual Features
+	•	Tooltips for ZIP, city, county info
+	•	Drill-downs from County → ZIP → Month
+	•	Interactive slicers for advanced user control
+ 
 ## 🧑‍💼 
 I built this project end-to-end to demonstrate my SQL fluency, analytical thinking, and comfort working with large volumes of data. Even without real CenterPoint data, this shows how I’d approach a real-world energy analytics problem.
 
